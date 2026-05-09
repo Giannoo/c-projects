@@ -1,5 +1,12 @@
 # Statistics Library
 
-A few functions I built for statistics (More on the basic side of statistics).
+A custom C library implementing a few core statistical functions.
 
-NOT YET FINISHED.
+## Features
+
+- Mean
+- Median
+- Minimum
+- Maximum
+- Range
+- Mode
