@@ -19,7 +19,7 @@ void get_max(float arr[], int size, float* result)
     {
         if (arr[i] > maximum)
         {
-            arr[i] = maximum;
+            maximum = arr[i];
         }
     }
 
@@ -33,7 +33,7 @@ void get_min(float arr[], int size, float* result)
     {
         if(arr[i] < minimum)
         {
-            arr[i] = minimum;
+            minimum = arr[i];
         }
     }
 
