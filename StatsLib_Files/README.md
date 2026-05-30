@@ -10,3 +10,4 @@ A custom C library implementing a few core statistical functions.
 - Maximum
 - Range
 - Mode
+- Variance

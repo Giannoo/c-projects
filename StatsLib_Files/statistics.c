@@ -90,6 +90,24 @@ void get_range(float arr[], int size, float* result)
     *result = max - min;
 }
 
+void get_variance(float arr[], int size, float mean, float *result)
+{
+    float temp_arr[size];
+    float sum = 0;
+
+    for (int i = 0; i < size; i++) {
+        temp_arr[i] = arr[i] - mean;
+    }
+
+    for (int i = 0; i < size; i++) {
+        float temp = (temp_arr[i]) * temp_arr[i];
+        temp_arr[i] = temp;
+        sum += temp_arr[i]; 
+    }
+
+    *result = sum / size;
+}
+
 void get_mode(float arr[], int size, float* result)
 {
     
