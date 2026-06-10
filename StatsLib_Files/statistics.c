@@ -108,8 +108,35 @@ void get_variance(float arr[], int size, float mean, float *result)
     *result = sum / size;
 }
 
+void get_sdeviation(float arr[], int size, float *result)
+{
+    float sum = 0;
+
+    for (int i =0; i < size; i++) {
+        float temp = (arr[i]) * arr[i];
+        arr[i] = temp;
+        sum += arr[i];
+    }
+    
+    float variance = sum / size;
+    float guess = variance / 2;
+    float epilson = 0.0001;
+
+    while ((guess * guess - variance) > epilson || epilson < (guess * guess - variance)) {
+        guess = (guess + variance / guess) / 2.0;
+    }
+    
+    *result = guess;
+}
+
 void get_mode(float arr[], int size, float* result)
 {
-    
+
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i]) {
+
+        }
+    }
     
 }

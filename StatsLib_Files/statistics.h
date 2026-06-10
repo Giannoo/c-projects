@@ -8,5 +8,6 @@ void get_median(float arr[], int size, float* result);
 void get_range(float arr[], int size, float* result);
 void get_mode(float arr[], int size, float* result);
 void get_variance(float arr[], int size, float mean, float *result);
+void get_sdeviation(float arr[], int size, float* result);
 
 #endif
